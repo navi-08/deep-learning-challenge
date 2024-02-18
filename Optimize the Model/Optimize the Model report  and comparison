@@ -1,0 +1,42 @@
+Attempt #1
+Training Results:
+
+Loss: 0.8614
+Accuracy: 64.54%
+Methods Used:
+
+Sequential model from TensorFlow's Keras API
+ReLU activation function for hidden layers
+Sigmoid activation function for the output layer
+
+I need to make some changes in order to get to 75% accuracy or more than this 
+
+  
+Attempt #2 Report
+
+Methods Used:
+
+Neural Network with Hyperparameter Tuning (using Keras Tuner)
+
+Number of Layers: 3
+Activation Functions: relu, tanh, sigmoid out of these sigmoid is best in hidden layer
+sigmoid is used for output layer 
+Results
+
+Loss: 0.4902
+Accuracy: 79.81%
+Observations:
+
+The model achieved an accuracy of approximately 79.81%.
+
+
+
+  Comparison:
+
+Attempt #2 used a neural network with hyperparameter tuning, which is better performance compared to the basic sequential model in Attempt #1.
+
+In Attempt #1 used ReLU for hidden layers, on other hand in Attempt #2 a combination of activation functions including 'relu','tanh','sigmoid, with sigmoid being found to be the best for hidden layers. This suggests that a more diverse set of activation functions might contribute to better performance.
+
+Accuracy: Attempt #2 achieved the desired accuracy of over 75%, with an accuracy of 79.81%, surpassing the target, whereas Attempt #1 fell short.
+
+Loss: Attempt #2 also shows a significantly lower loss value compared to Attempt #1, indicating better convergence and model fit.
