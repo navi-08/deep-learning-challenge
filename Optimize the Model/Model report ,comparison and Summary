@@ -67,6 +67,13 @@ Loss: 0.8614
 Accuracy: 64.54%
 
 
+evaluation results
+
+Neural Network with Hyperparameter Tuning (using Keras Tuner)
+
+
+Loss: 0.4902
+Accuracy: 79.81%
 
   Comparison:
 
