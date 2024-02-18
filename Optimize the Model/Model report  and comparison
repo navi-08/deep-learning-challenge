@@ -77,3 +77,16 @@ In Attempt #1 used ReLU for hidden layers, on other hand in Attempt #2 a combina
 Accuracy: Attempt #2 achieved the desired accuracy of over 75%, with an accuracy of 79.81%, surpassing the target, whereas Attempt #1 fell short.
 
 Loss: Attempt #2 also shows a significantly lower loss value compared to Attempt #1, indicating better convergence and model fit.
+
+
+
+summary 
+
+In Attempt #1 with ReLU activation for hidden layers and sigmoid activation for the output layer.
+However, the achieved accuracy stood at 64.54%, falling short of the desired 75% . 
+In response, Attempt #2 hyperparameter tuning with Keras Tuner, a neural network with three layers was optimized. Activation functions ReLU, tanh, and sigmoid, with sigmoid proving most effective for the hidden layer, output layer. 
+This is resulted in  79.81%. The success of Attempt #2 highlights the efficacy of hyperparameter optimization
+
+
+
+
