@@ -1,0 +1,79 @@
+
+Attempt #1
+Training Results:
+
+Loss: 0.8614
+Accuracy: 64.54%
+Methods Used:
+
+Sequential model from TensorFlow's Keras API
+ReLU activation function for hidden layers
+Sigmoid activation function for the output layer
+
+I need to make some changes in order to get to 75% accuracy or more than this 
+
+  
+Attempt #2 Report
+
+Methods Used:
+
+Neural Network with Hyperparameter Tuning (using Keras Tuner)
+
+Number of Layers: 3
+Activation Functions: relu, tanh, sigmoid out of these sigmoid is best in hidden layer
+sigmoid is used for output layer 
+Results
+
+Loss: 0.4902
+Accuracy: 79.81%
+Observations:
+
+The model achieved an accuracy of approximately 79.81%.
+
+
+
+
+
+Compiling, Training, and Evaluating the Model
+
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+
+In the first attempt, i used 50 hidden_nodes_layer1 and 30 hidden_nodes_layer2  and 1 neuron ,utilizing ReLU activation functions for each layer.
+The neural network model consists of two hidden layers with 50 and 30 neurons respectively, along with an output layer containing 1 neuron. ReLU activation functions are applied to the hidden layers, while a sigmoid activation function is used for the output layer since it's a binary classification problem.
+
+Number of Neurons: The choice of 80 and 30 neurons in the hidden layers may have been based on empirical experimentation or architectural considerations. These numbers are not excessively large, which helps prevent overfitting, yet they provide sufficient capacity to capture complex patterns in the data.
+
+Number of Layers: Two hidden layers were chosen, allowing the model to learn hierarchical representations of the input data. The addition of multiple layers can enable the network to learn more abstract features from the data, potentially improving its predictive performance.
+
+Activation Functions: ReLU activation functions were selected for the hidden layers due to their effectiveness in mitigating the vanishing gradient problem and accelerating training. Sigmoid activation function was chosen for the output layer since it's suitable for binary classification tasks
+
+
+
+QUE. Were you able to achieve the target model performance?
+ANS. -I was not able to achieve the 75% model accuracy target. An accuracy of approximately is 64.54% and a loss of around Loss: 0.8614 on the test data, it's essential to compare these metrics against predefined performance goals or benchmarks to determine whether the model meets the desired criteria
+
+ QUE. What steps did you take in your attempts to increase model performance?
+ANS. I added more layers, removed more columns, added additional hidden nodes, and switched up the activation functions associated with each layer in an attempt to achieve higher model accuracy.
+
+
+
+evaluation results
+
+Model Evaluation Report
+
+The model was evaluated on a test dataset to assess its performance. The evaluation yielded the following results:
+
+Loss: 0.8614
+Accuracy: 64.54%
+
+
+
+  Comparison:
+
+Attempt #2 used a neural network with hyperparameter tuning, which is better performance compared to the basic sequential model in Attempt #1.
+
+In Attempt #1 used ReLU for hidden layers, on other hand in Attempt #2 a combination of activation functions including 'relu','tanh','sigmoid, with sigmoid being found to be the best for hidden layers. This suggests that a more diverse set of activation functions might contribute to better performance.
+
+Accuracy: Attempt #2 achieved the desired accuracy of over 75%, with an accuracy of 79.81%, surpassing the target, whereas Attempt #1 fell short.
+
+Loss: Attempt #2 also shows a significantly lower loss value compared to Attempt #1, indicating better convergence and model fit.
